@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f4ee">
+  <meta name="theme-color" content="#0b0d10">
+  <meta name="color-scheme" content="dark">
   <meta name="description" content="MirrorPhone is an upcoming native Mac app for bringing your USB-connected iPhone or iPad onto your desktop. Present beautifully. Save PNGs. Record video with device audio. Capture stays local.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="MirrorPhone — Small screen. Big presence.">
@@ -13,97 +14,393 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://tech-grandpa.github.io/mirrorphone-site/">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="preload" href="assets/fonts/Manrope.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="styles.css">
   <title>MirrorPhone — Small screen. Big presence.</title>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="header shell">
-    <a class="wordmark" href="#" aria-label="MirrorPhone home"><span class="brand-mark" aria-hidden="true"><i></i><i></i></span>MirrorPhone</a>
-    <nav aria-label="Main navigation"><a href="#possibilities">The possibilities</a><a href="#how-it-works">How it works</a></nav>
-    <a class="header-cta" href="https://github.com/tech-grandpa/mirrorphone-site" target="_blank" rel="noopener noreferrer">Follow the launch <span aria-hidden="true">↗</span></a>
+
+  <header class="header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top"><span class="dot" aria-hidden="true"></span>MirrorPhone</a>
+      <nav class="navlinks" aria-label="Main navigation">
+        <a href="#try">Try it</a>
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#faq">Questions</a>
+      </nav>
+      <a class="button button-ghost button-small" href="https://github.com/tech-grandpa/mirrorphone-site" target="_blank" rel="noopener noreferrer">Follow the launch</a>
+    </div>
   </header>
 
   <main id="main">
-    <section class="hero shell" aria-labelledby="hero-heading">
-      <div class="hero-heading">
-        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> A new perspective. Coming soon.</p>
-        <h1 id="hero-heading">Small screen.<br><span>Big presence.</span></h1>
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="wrap hero-inner">
+        <p class="chip mono"><span class="dot pulse" aria-hidden="true"></span>COMING SOON FOR MAC</p>
+        <h1 id="hero-heading">Small screen.<br>Big presence.</h1>
+        <p class="lede">Your iPhone or iPad, ready for the room. Plug it into your Mac and it floats on your desktop, framed your way, ready to present, screenshot or record.</p>
+        <div class="hero-actions">
+          <a class="button button-mint" href="#try">Try the controls</a>
+          <a class="button button-ghost" href="#how-it-works">How it works</a>
+        </div>
       </div>
-      <div class="hero-intro">
-        <span class="intro-index" aria-hidden="true">01 / MADE FOR YOUR MAC</span>
-        <p>Give your iPhone or iPad<br class="desktop-break"> room to shine.</p>
-        <p class="intro-body">Bring your USB-connected device to your Mac. Present it your way, capture the details, and keep the moments that matter.</p>
-        <a class="button button-dark" href="#preview">Take a closer look <span aria-hidden="true">↓</span></a>
-      </div>
-      <div class="presentation" id="preview">
-        <div class="stage" data-frame="dark" data-backdrop="sand" data-presentation="framed" role="img" aria-label="Illustrative Mac desktop and connected phone, both displaying an original typographic artwork">
-          <div class="stage-label"><span class="small-cross" aria-hidden="true">✳</span> SAME SCREEN. MORE SPACE.</div>
-          <span class="stage-coordinate" aria-hidden="true">MP / 001</span>
-          <div class="desktop">
-            <div class="desktop-menu"><span class="menu-symbol" aria-hidden="true">●</span><strong>MirrorPhone</strong><span>File</span><span>View</span><span>Capture</span><span class="menu-time">Fri 9:41</span></div>
-            <div class="desktop-note" aria-hidden="true">A little more<br>room for your<br><em>big ideas.</em><svg viewBox="0 0 94 45"><path d="M2 3C21 39 51 39 85 19M68 17l20 0-9 19"/></svg></div>
-            <div class="app-preview">
-              <div class="artwork"><span class="art-top">A SPACE TO CREATE</span><div class="art-orbit"></div><span class="art-title">MAKE<br>SOME<br>ROOM.</span><div class="art-bottom"><span>THE EVERYDAY,<br>ON A BIGGER STAGE.</span><span class="art-star">✳</span></div></div>
+    </section>
+
+    <section class="wrap try" id="try" aria-label="Interactive preview of MirrorPhone">
+      <div class="playground" id="playground">
+        <div class="scene">
+          <div class="menubar sys" aria-hidden="true"><strong>MirrorPhone</strong><span>Capture</span><span>View</span><span>Help</span></div>
+
+          <div class="bgwin" aria-hidden="true">
+            <div class="bgwin-bar"><i></i><i></i><i></i></div>
+            <div class="bgwin-body">
+              <div class="bgwin-side"><i class="is-current"></i><i></i><i></i><i></i></div>
+              <div class="bgwin-main"><i style="width:46%;height:20px"></i><i style="width:30%"></i><i style="width:38%;margin-top:22px"></i><i style="width:34%"></i><i style="width:40%"></i></div>
             </div>
-            <div class="preview-dock"><span class="dock-device"><i></i> iPhone <span aria-hidden="true">⌄</span></span><span class="dock-divider"></span><span class="dock-icon" aria-hidden="true">▣</span><span class="dock-record" aria-hidden="true"></span><span class="dock-divider"></span><span class="dock-icon dock-pin" aria-hidden="true">✦</span><span class="dock-icon" aria-hidden="true">☷</span></div>
-            <div class="desktop-foot" aria-hidden="true">YOUR DESKTOP. YOUR STAGE.</div>
           </div>
-          <div class="device-phone"><div class="phone-button"></div><div class="phone-screen"><div class="artwork"><span class="art-top">A SPACE TO CREATE</span><div class="art-orbit"></div><span class="art-title">MAKE<br>SOME<br>ROOM.</span><div class="art-bottom"><span>THE EVERYDAY,<br>ON A BIGGER STAGE.</span><span class="art-star">✳</span></div></div></div></div>
-          <svg class="usb-cable" viewBox="0 0 400 240" fill="none" aria-hidden="true"><path d="M318 3v72c0 49-54 43-54 83v29c0 30-25 44-56 44H48c-26 0-39-12-39-33v-7"/><rect x="3" y="169" width="12" height="23" rx="3"/></svg>
-          <div class="usb-badge"><span aria-hidden="true">↔</span> Connected by USB</div>
-          <span class="stage-side-note" aria-hidden="true">DESIGNED TO GET OUT OF YOUR WAY</span>
-        </div>
-        <div class="preview-bar">
-          <p>Make it feel like you.<span> An interactive presentation preview.</span></p>
-          <div class="preview-controls">
-            <div class="control-group" role="group" aria-label="Preview frame color"><button class="swatch swatch-dark is-active" type="button" data-frame="dark" aria-label="Dark frame" aria-pressed="true"></button><button class="swatch swatch-silver" type="button" data-frame="silver" aria-label="Silver frame" aria-pressed="false"></button></div>
-            <div class="control-group" role="group" aria-label="Preview backdrop"><button class="backdrop-button is-active" type="button" data-backdrop="sand" aria-pressed="true">Sand</button><button class="backdrop-button" type="button" data-backdrop="mint" aria-pressed="false">Mint</button></div>
-            <button class="screen-toggle" type="button" aria-pressed="false">Screen only <span class="toggle-track" aria-hidden="true"><i></i></span></button>
+
+          <div class="fullscreen-backdrop" aria-hidden="true"></div>
+
+          <div class="devgroup">
+            <div class="devwindow">
+              <div class="window-title sys" aria-hidden="true"><i></i><i></i><i></i><span data-device-name>iPhone</span></div>
+              <div class="winbody">
+                <div class="devbox">
+                  <div class="device">
+                    <div class="screen">
+                      <img src="assets/sample-screen.png" width="721" height="1560" alt="Sample notes app mirrored from a connected iPhone">
+                      <div class="flash" aria-hidden="true"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="dock sys">
+                  <div class="dock-device">
+                    <svg aria-hidden="true" width="18" height="16" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="1" y="2" width="14" height="16" rx="2.5"/><rect x="12.5" y="7" width="9" height="12" rx="2" fill="#262A30"/></svg>
+                    <span id="dock-label">iPhone</span>
+                  </div>
+                  <span class="dock-divider" aria-hidden="true"></span>
+                  <button type="button" class="dockbtn" id="btn-shot" aria-label="Save Screenshot" title="Save Screenshot"><span>
+                    <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M3.5 8h3.2l1.8-2.6h7L17.3 8h3.2v11h-17z"/><circle cx="12" cy="13.2" r="3.4"/></svg>
+                  </span></button>
+                  <button type="button" class="dockbtn" id="btn-rec" aria-label="Record" title="Record" aria-pressed="false"><span>
+                    <svg class="icon-rec" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8.8"/><circle cx="12" cy="12" r="4" fill="currentColor" stroke="none"/></svg>
+                    <svg class="icon-stop" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5" fill="#FF5A52"/><rect x="8.5" y="8.5" width="7" height="7" rx="1.2" fill="#fff"/></svg>
+                  </span></button>
+                  <button type="button" class="dockbtn dock-optional" data-toggle="monitoring" aria-label="Monitor Device Audio" title="Monitor Device Audio" aria-pressed="false"><span>
+                    <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.8v4.4h3l4.5 3.8V6l-4.5 3.8z"/><path class="icon-waves" d="M15 9a4.2 4.2 0 0 1 0 6M17.8 6.3a8 8 0 0 1 0 11.4"/><path class="icon-muted" d="M15.5 9.5l5 5M20.5 9.5l-5 5"/></svg>
+                  </span></button>
+                  <button type="button" class="dockbtn" data-toggle="panel" aria-label="Presentation Options" title="Presentation Options" aria-pressed="true" aria-controls="options-panel"><span>
+                    <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 7h9M19 7h1M4 12h2M12 12h8M4 17h10"/><circle cx="16" cy="7" r="2.2"/><circle cx="9" cy="12" r="2.2"/><circle cx="17" cy="17" r="2.2"/></svg>
+                  </span></button>
+                  <button type="button" class="dockbtn dock-pin" data-toggle="pinned" aria-label="Keep Window on Top" title="Keep Window on Top" aria-pressed="true"><span>
+                    <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path class="pin-head" d="M9 4h6l-1 6.2 3 3.3H7l3-3.3z"/><path d="M12 13.5V20"/></svg>
+                  </span></button>
+                  <button type="button" class="dockbtn dock-optional" data-toggle="full" aria-label="Present Full Screen" title="Present Full Screen" aria-pressed="false"><span>
+                    <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-7 7M10 20H4v-6M4 20l7-7"/></svg>
+                  </span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="toast sys" id="toast" role="status" aria-live="polite" hidden>
+            <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#8CE0C4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg>
+            <span id="toast-text"></span>
           </div>
         </div>
-        <p class="preview-disclaimer">Illustrative preview with original artwork. App interface and presentation may change before release.</p>
-        <p class="visually-hidden" id="preview-status" aria-live="polite"></p>
+
+        <div class="panel sys" id="options-panel">
+          <div class="panel-head">
+            <div>
+              <h2 class="panel-title">Presentation options</h2>
+              <p class="anote">The app’s own panel. Changes apply to the preview.</p>
+            </div>
+            <button type="button" class="panel-close" data-toggle="panel" aria-label="Close Options"><span><svg aria-hidden="true" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 5l14 14M19 5 5 19"/></svg></span></button>
+          </div>
+
+          <div class="tabs" role="tablist" aria-label="Option sections">
+            <button type="button" role="tab" id="tab-appearance" data-tab="appearance" aria-selected="true" aria-controls="pane-appearance">
+              <svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3.5a8.500 8.500 0 1 0 0 17c1.600 0 2-1 1.600-2.200-.5-1.600.6-2.800 2.200-2.800H18a2.500 2.500 0 0 0 2.500-2.500c0-5-3.800-9.500-8.500-9.500z"/><circle cx="8" cy="11" r="1.100" fill="currentColor"/><circle cx="11.5" cy="7.500" r="1.100" fill="currentColor"/><circle cx="16" cy="9" r="1.100" fill="currentColor"/></svg>
+              Appearance</button>
+            <button type="button" role="tab" id="tab-window" data-tab="window" aria-selected="false" aria-controls="pane-window" tabindex="-1">
+              <svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4.500" width="18" height="15" rx="2.500"/><path d="M3 9h18"/></svg>
+              Window</button>
+            <button type="button" role="tab" id="tab-audio" data-tab="audio" aria-selected="false" aria-controls="pane-audio" tabindex="-1">
+              <svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.800v4.400h3l4.500 3.800V6l-4.500 3.800z"/><path d="M15 9a4.200 4.200 0 0 1 0 6M17.800 6.300a8 8 0 0 1 0 11.400"/></svg>
+              Audio</button>
+            <button type="button" role="tab" id="tab-export" data-tab="export" aria-selected="false" aria-controls="pane-export" tabindex="-1">
+              <svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3.500M8 7l4-3.500L16 7"/><path d="M6 11H4.500v9.500h15V11H18"/></svg>
+              Export</button>
+          </div>
+
+          <div class="pane" id="pane-appearance" role="tabpanel" aria-labelledby="tab-appearance">
+            <div class="acard">
+              <h3 class="ahead">Device frame</h3>
+              <div class="arow"><span>Show frame</span><button type="button" class="sw" role="switch" data-toggle="framed" aria-checked="true" aria-label="Show frame"><span><i></i></span></button></div>
+              <div class="arow"><label for="mp-shape">Screen shape</label>
+                <select id="mp-shape">
+                  <option value="automatic">Automatic</option>
+                  <option value="phone">Rounded iPhone</option>
+                  <option value="tablet">Rounded iPad</option>
+                  <option value="rectangular">Square screen</option>
+                </select>
+              </div>
+              <p class="anote">Automatic adapts to the connected screen. It may not identify the exact model.</p>
+              <div class="arow"><span>Finish</span>
+                <div class="swatches">
+                  <button type="button" class="swatch" data-set="frameHex" data-value="272B32" aria-label="Graphite" aria-pressed="true"><i style="background:#272B32"></i></button>
+                  <button type="button" class="swatch" data-set="frameHex" data-value="C8CDD2" aria-label="Silver" aria-pressed="false"><i style="background:#C8CDD2"></i></button>
+                  <button type="button" class="swatch" data-set="frameHex" data-value="78D5BD" aria-label="Mint" aria-pressed="false"><i style="background:#78D5BD"></i></button>
+                  <input type="text" id="mp-hex" class="mono" value="272B32" maxlength="6" spellcheck="false" autocomplete="off" aria-label="Custom frame color, hexadecimal">
+                </div>
+              </div>
+            </div>
+            <div class="acard">
+              <h3 class="ahead">Backdrop &amp; spacing</h3>
+              <div class="arow"><span>Backdrop</span>
+                <div class="swatches">
+                  <button type="button" class="swatch" data-set="bgHex" data-value="101318" aria-label="Midnight" aria-pressed="true"><i style="background:#101318"></i></button>
+                  <button type="button" class="swatch" data-set="bgHex" data-value="E8E9EC" aria-label="Paper" aria-pressed="false"><i style="background:#E8E9EC"></i></button>
+                  <button type="button" class="swatch" data-set="bgHex" data-value="163D4B" aria-label="Ocean" aria-pressed="false"><i style="background:#163D4B"></i></button>
+                </div>
+              </div>
+              <div class="arow"><label for="mp-pad">Spacing</label><input id="mp-pad" type="range" min="0" max="30" step="1" value="12"><output id="mp-pad-out" for="mp-pad">12%</output></div>
+              <p class="anote">Backdrop appears in full screen, in a solid window, and in framed exports. Turn off Transparent surround under Window to see it here.</p>
+            </div>
+          </div>
+
+          <div class="pane" id="pane-window" role="tabpanel" aria-labelledby="tab-window" hidden>
+            <div class="acard">
+              <h3 class="ahead">On your desktop</h3>
+              <div class="arow"><div>Transparent surround<p class="anote">Show the desktop around your device.</p></div><button type="button" class="sw" role="switch" data-toggle="transparent" aria-checked="true" aria-label="Transparent surround"><span><i></i></span></button></div>
+              <div class="arow"><div>Keep window on top<p class="anote">Keep MirrorPhone above other app windows.</p></div><button type="button" class="sw" role="switch" data-toggle="pinned" aria-checked="true" aria-label="Keep window on top"><span><i></i></span></button></div>
+              <div class="arow"><div>Hide device name<p class="anote">Use “Device” in the title and device menu.</p></div><button type="button" class="sw" role="switch" data-toggle="hideName" aria-checked="false" aria-label="Hide device name"><span><i></i></span></button></div>
+            </div>
+            <div class="acard">
+              <h3 class="ahead">Size &amp; orientation</h3>
+              <button type="button" class="abutton" id="btn-rotate">
+                <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.600-5.900"/><path d="M20 4v5h-5"/></svg>
+                Rotate screen 90°</button>
+              <p class="anote">Rotation normally follows your device. Use this if the picture is sideways.</p>
+            </div>
+          </div>
+
+          <div class="pane" id="pane-audio" role="tabpanel" aria-labelledby="tab-audio" hidden>
+            <div class="acard">
+              <h3 class="ahead">Listen on this Mac</h3>
+              <div class="arow"><div>Play device audio<p class="anote">Listen through your Mac’s current audio output.</p></div><button type="button" class="sw" role="switch" data-toggle="monitoring" aria-checked="false" aria-label="Play device audio"><span><i></i></span></button></div>
+              <div class="arow"><label for="mp-vol">Volume</label><input id="mp-vol" type="range" min="0" max="100" step="1" value="80"><output id="mp-vol-out" for="mp-vol">80%</output></div>
+              <p class="anote">Playback volume and mute do not change the sound saved in a recording.</p>
+            </div>
+            <div class="acard">
+              <h3 class="ahead">Audio access</h3>
+              <p class="anote">macOS requests Microphone access for the USB audio stream. MirrorPhone uses device audio, not the Mac microphone.</p>
+            </div>
+          </div>
+
+          <div class="pane" id="pane-export" role="tabpanel" aria-labelledby="tab-export" hidden>
+            <div class="acard">
+              <h3 class="ahead">Screenshots &amp; recordings</h3>
+              <div class="segmented" role="group" aria-label="Export content">
+                <button type="button" data-export="framed" aria-pressed="true">With frame</button>
+                <button type="button" data-export="screen" aria-pressed="false">Screen only</button>
+              </div>
+              <p class="anote" id="export-note">Include the export frame, backdrop color and spacing. The live screen shape and desktop transparency are presentation-only.</p>
+              <p class="anote mono">Source: 1126 × 2436 pixels</p>
+            </div>
+            <div class="acard">
+              <h3 class="ahead">Unsaved recordings</h3>
+              <p class="anote">Finished recordings stay on this Mac until you save or discard them.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="try-note">Everything here works: take a screenshot, start a recording, pin the window, go full screen, or open the options and restyle the device. Illustrative preview rebuilt from the app; the interface may change before release.</p>
+    </section>
+
+    <section class="wrap section" id="features" aria-labelledby="features-heading">
+      <h2 class="section-title" id="features-heading">A device on your desktop, <span class="dim">not another window to manage.</span></h2>
+
+      <div class="bento">
+        <article class="tile s4">
+          <div class="tile-art art-float" aria-hidden="true">
+            <div class="art-app"><i style="width:42%;height:14px;background:#2A3037"></i><i style="width:62%;margin-top:14px"></i><i style="width:54%"></i><b>Next slide</b></div>
+            <div class="art-phone"><img src="assets/sample-screen.png" alt="" loading="lazy"></div>
+            <div class="art-outline"></div>
+            <svg class="art-cursor" width="26" height="26" viewBox="0 0 24 24"><path d="M5 3l14 8.500-6 1.400 3.400 6.300-2.400 1.300-3.400-6.400L6 18.500z" fill="#fff" stroke="#0B0D10" stroke-width="1.200" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="tile-copy">
+            <h3>Floats above your work. Clicks pass straight through.</h3>
+            <p>With a transparent surround there is no window chrome, just the device. Only the device and its controls take clicks; everything around them goes to the app underneath. Drag the screen to move it, pin it on top, or take it full screen.</p>
+          </div>
+        </article>
+
+        <article class="tile s2 tile-keys">
+          <h3>Hands on the keyboard.</h3>
+          <p>Controls fade out while you present and return when you move the pointer.</p>
+          <dl class="shortcuts">
+            <div><dt>Connect device</dt><dd><kbd>⌘</kbd><kbd>K</kbd></dd></div>
+            <div><dt>Save screenshot</dt><dd><kbd>⇧</kbd><kbd>⌘</kbd><kbd>S</kbd></dd></div>
+            <div><dt>Copy screenshot</dt><dd><kbd>⇧</kbd><kbd>⌘</kbd><kbd>C</kbd></dd></div>
+            <div><dt>Record / stop</dt><dd><kbd>⇧</kbd><kbd>⌘</kbd><kbd>R</kbd></dd></div>
+            <div><dt>Keep on top</dt><dd><kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd></dd></div>
+            <div><dt>Full screen</dt><dd><kbd>⌃</kbd><kbd>⌘</kbd><kbd>F</kbd></dd></div>
+            <div><dt>Rotate 90°</dt><dd><kbd>⌥</kbd><kbd>⌘</kbd><kbd>R</kbd></dd></div>
+          </dl>
+        </article>
+
+        <article class="tile s2">
+          <div class="tile-art art-shot" aria-hidden="true">
+            <div class="art-crop"><img src="assets/sample-screen.png" alt="" loading="lazy"><i></i><i></i><i></i><i></i></div>
+            <span class="mono">1126 × 2436 · PNG</span>
+          </div>
+          <div class="tile-copy">
+            <h3>Every source pixel.</h3>
+            <p>Screen-only screenshots keep the device’s own resolution, whatever size the window is. Or export with the frame, backdrop and spacing you chose.</p>
+          </div>
+        </article>
+
+        <article class="tile s4 tile-record">
+          <div class="tile-copy">
+            <h3>Keep the moment.</h3>
+            <p>Record a walkthrough as an MP4, framed or screen only, on a portrait or landscape canvas. Include device audio when you want it; listening on your Mac and recording are independent.</p>
+            <ul class="formats mono"><li>MP4</li><li>H.264</li><li>30 fps</li><li>AAC audio</li></ul>
+          </div>
+          <div class="tile-art art-sheet" aria-hidden="true">
+            <div class="sheet sys">
+              <strong>Record your device</strong>
+              <small>The canvas and appearance stay fixed while recording. Rotating content fits inside without cropping.</small>
+              <div class="sheet-row">Screen only<span class="fake-switch"><i></i></span></div>
+              <div class="sheet-seg"><span class="is-on">Automatic</span><span>Portrait</span><span>Landscape</span></div>
+              <div class="sheet-row">Include device audio<span class="fake-switch is-on"><i></i></span></div>
+              <small>MP4 · H.264 · 30 fps · AAC when audio is included</small>
+              <div class="sheet-actions"><span>Cancel</span><span class="is-primary">Start Recording</span></div>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
-    <div class="facts shell" aria-label="At a glance"><span><i aria-hidden="true">↗</i> Native to macOS</span><span><i aria-hidden="true">↔</i> Connected by USB</span><span><i aria-hidden="true">◉</i> Capture stays local</span><span><i aria-hidden="true">▯</i> iPhone &amp; iPad</span></div>
+    <section class="wrap section" id="how-it-works" aria-labelledby="setup-heading">
+      <h2 class="section-title" id="setup-heading">One cable. That’s the setup.</h2>
+      <p class="section-intro">No companion app on the device and nothing to pair. Your phone does the interacting; your Mac gives it room.</p>
 
-    <section class="possibilities shell section-space" id="possibilities" aria-labelledby="possibilities-heading">
-      <div class="section-heading"><p class="eyebrow">02 / A BETTER VIEW</p><h2 id="possibilities-heading">Your screen.<br>With a little more <em>possibility.</em></h2><p class="section-intro">Walk through an app. Show your work.<br>Save a great idea before it disappears.</p></div>
-      <div class="feature-list">
-        <article class="feature-row"><span class="feature-number">01</span><h3>A place on<br>your desktop.</h3><p>Let your device float above your work. Keep it on top, go full screen, or adjust the frame, background and spacing to suit the moment.</p><div class="feature-symbol floating-symbol" aria-hidden="true"><i></i><i></i></div></article>
-        <article class="feature-row"><span class="feature-number">02</span><h3>Every detail.<br>Worth keeping.</h3><p>Save source-resolution PNGs, copy a screenshot, or add a frame for a polished composition. Screenshot resolution stays independent of your window size.</p><div class="feature-symbol capture-symbol" aria-hidden="true"><i></i><span>PNG</span></div></article>
-        <article class="feature-row"><span class="feature-number">03</span><h3>Your style.<br>On the big screen.</h3><p>Choose a frame color and backdrop, adjust your preview size, or turn the screen manually. Presentation controls stay close when you need them.</p><div class="feature-symbol style-symbol" aria-hidden="true"><i></i><i></i><i></i></div></article>
+      <div class="steps">
+        <article class="tile">
+          <svg role="img" aria-label="A Mac laptop connected to an iPhone by a USB cable" viewBox="0 0 360 220">
+            <rect x="42" y="38" width="188" height="122" rx="9" fill="#1B1F24" stroke="#444B53" stroke-width="1.500"/>
+            <rect x="50" y="46" width="172" height="106" rx="3" fill="#0B0D10"/>
+            <rect x="124" y="46" width="24" height="5" rx="2.500" fill="#1B1F24"/>
+            <path d="M22 160h228l9 13a4 4 0 0 1-3.300 6.300H16.300A4 4 0 0 1 13 173z" fill="#2A3037" stroke="#444B53" stroke-width="1.500"/>
+            <rect x="112" y="160" width="48" height="5" rx="2.500" fill="#15181C"/>
+            <path d="M258 170h14c16 0 6 28 22 28s16-10 16-24" fill="none" stroke="#8CE0C4" stroke-width="3" stroke-linecap="round"/>
+            <rect x="250" y="166" width="10" height="8" rx="2" fill="#8CE0C4"/>
+            <rect x="305" y="166" width="10" height="9" rx="2" fill="#8CE0C4"/>
+            <rect x="284" y="62" width="52" height="106" rx="11" fill="#1B1F24" stroke="#444B53" stroke-width="1.500"/>
+            <rect x="289" y="67" width="42" height="96" rx="7" fill="#0B0D10"/>
+          </svg>
+          <div class="tile-copy">
+            <span class="step-number mono">01</span>
+            <h3>Plug in.</h3>
+            <p>Connect your iPhone or iPad to your Mac with a USB-C or Lightning data cable.</p>
+          </div>
+        </article>
+
+        <article class="tile">
+          <svg role="img" aria-label="An unlocked iPhone asking whether to trust the Mac, beside the Connect Device button" viewBox="0 0 360 220">
+            <rect x="52" y="22" width="96" height="210" rx="18" fill="#1B1F24" stroke="#444B53" stroke-width="1.500"/>
+            <rect x="58" y="28" width="84" height="204" rx="13" fill="#0B0D10"/>
+            <rect x="66" y="84" width="68" height="82" rx="10" fill="#262B31"/>
+            <rect x="76" y="98" width="48" height="6" rx="3" fill="#F1F3F2"/>
+            <rect x="80" y="111" width="40" height="4" rx="2" fill="#6F767C"/>
+            <rect x="72" y="134" width="27" height="22" rx="6" fill="#8CE0C4"/>
+            <rect x="103" y="134" width="27" height="22" rx="6" fill="#3A4047"/>
+            <path d="M172 110h36" stroke="#444B53" stroke-width="1.500" stroke-dasharray="3 5" stroke-linecap="round"/>
+            <rect x="216" y="88" width="124" height="44" rx="22" fill="#8CE0C4"/>
+            <rect x="238" y="106" width="64" height="8" rx="4" fill="#0F2921"/>
+            <path d="M312 110h10m-4-4 4 4-4 4" fill="none" stroke="#0F2921" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="tile-copy">
+            <span class="step-number mono">02</span>
+            <h3>Unlock and connect.</h3>
+            <p>Unlock your device and accept Trust if asked, then choose Connect Device in MirrorPhone. Allow Camera access on your Mac for the screen stream.</p>
+          </div>
+        </article>
+
+        <article class="tile">
+          <svg role="img" aria-label="The device floating on the Mac desktop with its control dock underneath" viewBox="0 0 360 220">
+            <rect x="30" y="34" width="210" height="150" rx="9" fill="#171B20" stroke="#2E343B" stroke-width="1.500"/>
+            <rect x="48" y="62" width="90" height="10" rx="5" fill="#2A3037"/>
+            <rect x="48" y="82" width="120" height="6" rx="3" fill="#21262C"/>
+            <rect x="48" y="96" width="104" height="6" rx="3" fill="#21262C"/>
+            <rect x="204" y="14" width="84" height="170" rx="15" fill="#272B32" stroke="#59616A" stroke-width="1.200"/>
+            <rect x="208" y="18" width="76" height="162" rx="11" fill="#ECEEE9"/>
+            <rect x="216" y="70" width="60" height="72" rx="6" fill="#4F6E61"/>
+            <rect x="216" y="42" width="38" height="6" rx="3" fill="#1B1F24"/>
+            <rect x="182" y="192" width="128" height="22" rx="11" fill="#2A2F35" stroke="#59616A"/>
+            <circle cx="234" cy="203" r="5" fill="#59616A"/><circle cx="250" cy="203" r="5" fill="#59616A"/><circle cx="266" cy="203" r="5" fill="#59616A"/><circle cx="282" cy="203" r="5" fill="#8CE0C4"/><circle cx="298" cy="203" r="5" fill="#59616A"/>
+            <rect x="192" y="200" width="28" height="6" rx="3" fill="#8B9297"/>
+          </svg>
+          <div class="tile-copy">
+            <span class="step-number mono">03</span>
+            <h3>Present.</h3>
+            <p>Use your device as normal while it appears on your Mac. Enable device audio separately when you want to hear or record it.</p>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="recording shell" aria-labelledby="recording-heading">
-      <div class="recording-copy"><p class="eyebrow">03 / FROM LIVE TO SAVED</p><h2 id="recording-heading">Keep<br>the moment<span>.</span></h2><p>Turn a walkthrough into an MP4, with device audio when enabled. Choose a framed composition or export the screen on its own.</p><div class="recording-formats"><span>H.264 VIDEO</span><span>AAC DEVICE AUDIO</span><span>MP4 EXPORT</span></div></div>
-      <div class="recording-art" aria-hidden="true"><div class="recording-line"><span class="record-dot"></span><span>REC</span><span>00:24</span></div><div class="waveform"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="recording-file"><span>↗</span><strong>A moment,<br>made shareable.</strong><small>walkthrough.mp4</small></div></div>
-      <p class="recording-note">Made on your device. Captured on your Mac.</p>
+    <section class="wrap section" aria-labelledby="privacy-heading">
+      <div class="privacy">
+        <div>
+          <svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#8CE0C4" stroke-width="1.500" stroke-linejoin="round"><path d="M12 3 5 5.500v6c0 4.400 3 8 7 9.500 4-1.500 7-5.100 7-9.500v-6z"/><rect x="9" y="11" width="6" height="5" rx="1"/><path d="M10 11V9.500a2 2 0 0 1 4 0V11"/></svg>
+          <h2 id="privacy-heading">Only on your Mac. Always in your hands.</h2>
+          <p>Screenshots and recordings stay on your Mac until you save or discard them. Just your device, your cable and your work.</p>
+        </div>
+        <ul>
+          <li>No account</li>
+          <li>No companion app on the device</li>
+          <li>No cloud upload</li>
+        </ul>
+      </div>
     </section>
 
-    <section class="setup shell section-space" id="how-it-works" aria-labelledby="setup-heading">
-      <div class="section-heading setup-heading"><p class="eyebrow">04 / KEEP IT SIMPLE</p><h2 id="setup-heading">One cable.<br>A fresh perspective.</h2><p class="section-intro">Your phone does the interacting.<br>Your Mac gives it room.</p></div>
-      <div class="setup-steps"><article><span class="step-number">1<span aria-hidden="true">—</span></span><h3>Plug in.</h3><p>Connect your iPhone or iPad to your Mac with a USB data cable.</p></article><article><span class="step-number">2<span aria-hidden="true">—</span></span><h3>Make the connection.</h3><p>Unlock your device, accept Trust if asked, then choose Connect Device in MirrorPhone. Allow Camera access for the screen stream.</p></article><article><span class="step-number">3<span aria-hidden="true">↗</span></span><h3>Give it the stage.</h3><p>Interact on your device while it appears on your Mac. Enable device audio separately when you want to hear or record it.</p></article></div>
+    <section class="wrap section faq" id="faq" aria-labelledby="faq-heading">
+      <div>
+        <h2 class="section-title" id="faq-heading">Before you plug in.</h2>
+        <p class="section-intro">Still taking shape. Already thoughtfully considered.</p>
+      </div>
+      <div class="faq-list">
+        <details><summary>When can I get MirrorPhone?<svg class="plus" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.800" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary><p>MirrorPhone is in development. Follow the launch project on GitHub for release updates.</p></details>
+        <details><summary>Which devices and Macs will it support?<svg class="plus" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.800" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary><p>MirrorPhone is built for macOS, with iPhone and iPad connected over USB. Tested compatibility details will accompany the release.</p></details>
+        <details><summary>Can I control my phone from my Mac?<svg class="plus" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.800" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary><p>Interact directly on your iPhone or iPad. MirrorPhone displays and captures its screen on your Mac; remote touch control is outside the current scope.</p></details>
+        <details><summary>Does it work wirelessly?<svg class="plus" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.800" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary><p>The upcoming app uses a USB data cable. Wireless mirroring is outside the current release plan.</p></details>
+        <details><summary>What can I save?<svg class="plus" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.800" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary><p>Save PNG screenshots or H.264/AAC MP4 recordings, with a frame or just the screen. Device audio can be included when enabled and available. Screen-only PNGs preserve the source pixels; recordings use a fixed portrait or landscape canvas.</p></details>
+      </div>
     </section>
 
-    <section class="privacy shell" aria-labelledby="privacy-heading"><div class="privacy-icon" aria-hidden="true"><svg viewBox="0 0 80 80"><rect x="15" y="33" width="50" height="38" rx="9"/><path d="M25 33V22a15 15 0 0 1 30 0v11"/><circle cx="40" cy="50" r="3"/><path d="M40 53v7"/></svg></div><div><p class="eyebrow">A QUIETER KIND OF APP</p><h2 id="privacy-heading">Your screen stays in your hands.</h2><p>Capture stays on your Mac. No account, phone companion app or cloud upload is needed. Just your device, your cable and your work.</p></div><span class="privacy-aside">LOCAL BY DESIGN<br>PERSONAL BY DEFAULT ↙</span></section>
-
-    <section class="faq shell section-space" aria-labelledby="faq-heading"><div class="faq-heading"><p class="eyebrow">05 / A FEW GOOD QUESTIONS</p><h2 id="faq-heading">Before you<br>plug in.</h2><p>Still taking shape.<br>Already thoughtfully considered.</p></div><div class="faq-list">
-      <details><summary>When can I get MirrorPhone?<span aria-hidden="true">+</span></summary><p>MirrorPhone is in development. Follow the launch project on GitHub for release updates.</p></details>
-      <details><summary>Which devices and Macs will it support?<span aria-hidden="true">+</span></summary><p>MirrorPhone is built for macOS, with iPhone and iPad connected over USB. Tested compatibility details will accompany the release.</p></details>
-      <details><summary>Can I control my phone from my Mac?<span aria-hidden="true">+</span></summary><p>Interact directly on your iPhone or iPad. MirrorPhone displays and captures its screen on your Mac; remote touch control is outside the current scope.</p></details>
-      <details><summary>Does it work wirelessly?<span aria-hidden="true">+</span></summary><p>The upcoming app uses a USB data cable. Wireless mirroring is outside the current release plan.</p></details>
-      <details><summary>What can I save?<span aria-hidden="true">+</span></summary><p>Save PNG screenshots or H.264/AAC MP4 recordings, with a frame or just the screen. Device audio can be included when enabled and available. Screen-only PNGs preserve the source pixels; recordings use a fixed portrait or landscape canvas.</p></details>
-    </div></section>
-
-    <section class="launch shell" aria-labelledby="launch-heading"><div class="launch-top"><p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> MIRRORPHONE / COMING SOON</p><span aria-hidden="true">THE NEXT CHAPTER ↗</span></div><h2 id="launch-heading">Meet your screen’s<br><em>new favorite place.</em></h2><div class="launch-bottom"><p>A native Mac app. A familiar screen.<br>A whole new way to show it.</p><a class="button button-dark" href="https://github.com/tech-grandpa/mirrorphone-site" target="_blank" rel="noopener noreferrer">Follow the launch on GitHub <span aria-hidden="true">↗</span></a></div></section>
+    <section class="launch" aria-labelledby="launch-heading">
+      <div class="wrap">
+        <h2 id="launch-heading">Meet your screen’s new favorite place.</h2>
+        <p>A native Mac app. A familiar screen. A whole new way to show it.</p>
+        <a class="button button-mint button-large" href="https://github.com/tech-grandpa/mirrorphone-site" target="_blank" rel="noopener noreferrer">Follow the launch on GitHub
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+        </a>
+      </div>
+    </section>
   </main>
 
-  <footer class="footer shell"><a class="wordmark" href="#" aria-label="MirrorPhone home"><span class="brand-mark" aria-hidden="true"><i></i><i></i></span>MirrorPhone</a><p>Made for the things you want to show.</p><div><a href="https://github.com/tech-grandpa/mirrorphone-site" target="_blank" rel="noopener noreferrer">GitHub ↗</a><span>© <span id="year">2026</span> MirrorPhone</span></div><p class="footer-legal">MirrorPhone is an independent project. Apple, Mac, macOS, iPhone and iPad are trademarks of Apple Inc.</p></footer>
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p class="footer-brand"><strong>MirrorPhone</strong> · Made for the things you want to show.</p>
+      <div class="footer-links"><a href="https://github.com/tech-grandpa/mirrorphone-site" target="_blank" rel="noopener noreferrer">GitHub</a><span>© <span id="year">2026</span> MirrorPhone</span></div>
+      <p class="footer-legal">MirrorPhone is an independent project. Apple, Mac, macOS, iPhone and iPad are trademarks of Apple Inc.</p>
+    </div>
+  </footer>
   <script src="script.js" defer></script>
 </body>
 </html>
