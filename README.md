@@ -4,12 +4,12 @@
 
 **Small screen. Big presence.** A native Mac app for bringing a USB-connected iPhone or iPad onto your desktop, styling its presentation, and keeping screenshots or recordings locally.
 
-The page uses a warm editorial direction: ivory paper, generous spacing, oversized Manrope typography, quiet ruled divisions and an electric mint accent. The central composition is an original illustration of a floating mirrored device on a Mac desktop, paired with its physical phone. The repeated artwork makes the app's purpose immediately legible without exposing private screenshots or borrowing Apple assets.
+The page is dark-first: near-black ground, the app's own mint accent and Geist typography. The centrepiece is an interactive rebuild of the app's interface (floating device, capsule dock and Presentation options panel) on an illustrative Mac desktop, so visitors can try the real controls. The device shows the project's synthetic sample screen (`assets/sample-screen.png`), not a private capture, and no Apple assets are used.
 
 The content follows the intended visitor journey:
 
 1. Understand the USB device-to-Mac pitch and see an illustrative preview.
-2. Try dark/silver frames, sand/mint backdrops and screen-only presentation.
+2. Try the dock and Presentation options: frame finish, screen shape, backdrop, spacing, transparent surround, rotation, screenshot and record.
 3. Explore desktop presentation, source-resolution PNG capture and MP4 recording with optional device audio.
 4. Learn the cable, unlock/trust and connection setup.
 5. Understand local capture, development status and compatibility boundaries.
@@ -37,7 +37,7 @@ Only launch-page files belong in that public repository. The app repository, sou
 
 ## Assets and accessibility
 
-All artwork and icons are original CSS/SVG. Manrope is self-hosted in `assets/fonts/` with its SIL Open Font License included. The page uses semantic headings, native expandable FAQ entries, keyboard focus outlines, a skip link, accessible preview toggles and an announced preview state. Motion respects reduced-motion preferences. The illustration is decorative and described as a single image; it is not a functioning phone interface.
+All artwork and icons are original CSS/SVG. Geist and Geist Mono load from Google Fonts. The page uses semantic headings, native expandable FAQ entries, keyboard focus outlines, a skip link, accessible preview switches and tabs, and announced capture toasts. Motion respects reduced-motion preferences. The preview is illustrative; it is not a functioning phone interface.
 
 ## Before launch
 
